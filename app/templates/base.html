@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Trends Keywords</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('trends_24h') }}">Past 24 Hours</a></li>
+            <li><a href="{{ url_for('trends_48h') }}">Past 48 Hours</a></li>
+            <li><a href="{{ url_for('trends_7d') }}">Past 7 Days</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+</body>
+</html>

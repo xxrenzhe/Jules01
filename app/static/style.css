@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: circle; /* Or 'square', or none and add custom bullets */
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.container { /* Optional: wrap content in base.html with <div class="container"> */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
