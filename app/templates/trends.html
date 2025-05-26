@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ timeframe }}</h1>
+
+    {% if keywords %}
+        <p>Top trending keywords:</p>
+        <ul>
+        {% for keyword in keywords %}
+            <li>{{ keyword }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No trending keywords found for this period or an error occurred.</p>
+    {% endif %}
+{% endblock %}
